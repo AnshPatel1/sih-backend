@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Account.apps.AccountConfig',
+    "api.apps.ApiConfig",
     "djoser",
     "rest_framework_simplejwt.token_blacklist",
     "corsheaders",

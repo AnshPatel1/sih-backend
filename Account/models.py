@@ -26,8 +26,9 @@ class User(AbstractUser):
         ('recruiter', 'Recruiter')
     ))
     roles = models.ManyToManyField(Role, null=True, blank=True)
-    supervisor = models.ForeignKey('self', on_delete=models.PROTECT, null=True, blank=True)
+    mentor = models.ManyToManyField('self')
 
+    is_mentor = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
