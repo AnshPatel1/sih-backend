@@ -19,7 +19,7 @@ class User(AbstractUser):
     username = models.CharField(max_length=50, unique=True)
     email = models.EmailField(default="admin@gmail.com", unique=True)
     full_name = models.CharField(max_length=1024)
-    type = models.CharField(max_length=1024, default="job_seeker", options=(
+    type = models.CharField(max_length=1024, default="job_seeker", choices=(
         ('admin', 'Admin'),
         ('job_seeker', 'Job Seeker'),
         ('employer', 'Employer'),
