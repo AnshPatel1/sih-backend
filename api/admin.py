@@ -25,4 +25,3 @@ admin.site.register(MentorshipRequest)
 admin.site.register(Endorsement)
 admin.site.register(MentorshipWork)
 admin.site.register(FeaturedCourse)
-

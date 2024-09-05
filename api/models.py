@@ -359,5 +359,3 @@ class FeaturedCourse(models.Model):
     class Meta:
         verbose_name = 'Featured Course'
         verbose_name_plural = 'Featured Courses'
-
-
